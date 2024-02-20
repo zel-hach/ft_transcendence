@@ -1,0 +1,43 @@
+[
+    {
+        "id": 1,
+        "image": "/src/assets/utilisateur.png",
+        "text":"username"
+    },
+    {
+        "id": 2,
+        "image": "/src/assets/viewProfile.png",
+        "text":"view profile"
+    },
+    {
+        "id": 3,
+        "image": "/src/assets/ajouter.png",
+        "text":"add to friend list"
+    },
+    {
+        "id": 4,
+        "image": "/src/assets/inviter.png",
+        "text":"invite to a game"
+    },
+    {
+        "id": 5,
+        "image": "/src/assets/block.png",
+        "text":"block"
+    },
+    {
+        "id": 6,
+        "image": "/src/assets/key.png",
+        "text":"Give administrator privileges"
+    },
+    {
+        "id": 7,
+        "image": "/src/assets/mute.png",
+        "text":"Mute"
+    },
+    {
+        "id": 9,
+        "image": "/src/assets/ban-user.png",
+        "text": "Ban from channel"
+    }
+   
+    ]
