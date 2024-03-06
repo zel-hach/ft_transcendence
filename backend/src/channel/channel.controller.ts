@@ -515,4 +515,16 @@ export class ChannelController {
   findOne(@Param('id') id: number) {
     return this.channelService.findOne(+id);
   }
+  @Post("changePass")
+  async changePass(@Body() channel:any){
+    const mychannel = await this.channelService.findOne(channel.channelid);
+    if(mychannel && mychannel.channelOwner == channel.userid)
+    {
+      const salt = await genSalt();
+      mychannel.password = await hash(channel.password, salt);
+      mychannel.mode= channel.mode;
+      return(await this.channelService.update(channel.channelid,mychannel))
+    }
+    return(mychannel);
+  }
 }
