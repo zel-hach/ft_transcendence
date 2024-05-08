@@ -23,6 +23,9 @@ export class ChannelService {
     }
     return this.repositoryChannel.findOne(options);
   }
+  async update(id: number, channel: Partial<Channel>) {
+    return await this.repositoryChannel.save(channel);
+}
   async remove(id: number) {
     const options : FindOneOptions<Channel>={where:{id:id}}
     const user = await this.repositoryChannel.findOne(options);

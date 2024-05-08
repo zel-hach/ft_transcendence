@@ -1,5 +1,5 @@
 up: 
-	docker compose up -d
+	docker compose up
 clean:
 	docker compose down
 	docker compose rm
