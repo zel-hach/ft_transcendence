@@ -9,7 +9,7 @@ import myLottie from "../../../../public/assets/lotties/Animation-pong.json";
 
 export const LandingPage = () => {
   const [isLoading, setIsLoading] = useState(false);
-  const path = `${NEXT_PUBLIC_URL}/auth/42`;
+  const path = `${process.env.NEXT_PUBLIC_URL}/auth/42`;
   return (
     <div className=" bg-gradient-to-r from-black to-accent-200 h-[80vh] flex items-center">
       <Container className="flex justify-between pt-40 pb-40 x-20 grow">

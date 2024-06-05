@@ -20,6 +20,7 @@ import { Users } from './user/entities/user.entity';
         entities: [Users, Game, Friend],
         autoLoadEntities: true,
         synchronize: true,
+        ssl:true,
       }),
     }),
   ],

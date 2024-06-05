@@ -42,11 +42,11 @@ export class AuthenticationController {
     req.res.setHeader('Set-Cookie', [cookie, refresh]);
     if (user.tfa === true) {
       return req.res.redirect(
-        `http://${process.env.POSTGRES_HOST}:3000/two-factor-login`,
+        `http://10.12.8.4:3000/two-factor-login`,
       );
     }
     return req.res.redirect(
-      `http://${process.env.POSTGRES_HOST}:3000/settings`,
+      `http://10.12.8.4:3000/settings`,
     );
   }
 
